@@ -20,7 +20,7 @@ jobs:
         path: hello.txt
   download:
     runs-on: ubuntu-latest
-    name: bulid
+    needs: build
     steps:
     - name: Download the File
       uses: actions/download-artifact@v4
